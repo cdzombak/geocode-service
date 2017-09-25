@@ -1,0 +1,36 @@
+{
+  "name": "geocode-service",
+  "version": "0.0.1",
+  "description": "A geocode service which returns lat/lng and elevation for a string address.",
+  "main": "geocode.js",
+  "contributors": [
+    {
+      "name": "Chris Dzombak",
+      "email": "chris@dzombak.com"
+    }
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node geocode.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdzombak/geocode-service.git"
+  },
+  "keywords": [
+    "geocode"
+  ],
+  "author": "Chris Dzombak",
+  "license": "MIT",
+  "dependencies": {
+    "@google/maps": "^0.4.3",
+    "bluebird": "^3.5.0",
+    "cacheman-redis": "^1.1.2",
+    "express": "^4.15.4",
+    "redis": "^2.8.0"
+  },
+  "bugs": {
+    "url": "https://github.com/cdzombak/geocode-service/issues"
+  },
+  "homepage": "https://github.com/cdzombak/geocode-service#readme"
+}
