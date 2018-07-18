@@ -72,7 +72,7 @@ app.get('/api/geocode', function(req, res) {
       res.json(result)
 
       result['cached'] = new Date()
-      return cache.setAsync(cacheKeyFromAddress(result['address']), result, WEEK_IN_SECONDS)
+      return cache.setAsync(cacheKeyFromAddress(result['address']), result, 4*WEEK_IN_SECONDS)
     })
   })
   .catch(function(err) {
